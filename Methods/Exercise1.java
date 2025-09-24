@@ -2,6 +2,20 @@
 import java.util.Scanner;
 
 class Exercise1 {
+
+    public static float smallerNumber(int n1, int n2, int n3){
+        float r;
+
+        if(n1<n2 && n1<n3){
+            r = n1;
+        }else if(n2<n3){
+            r = n2;
+        }else{
+            r = n3;
+        }
+
+        return r;
+    }
     public static void main(String[] args) {
         
         Scanner sc = new Scanner(System.in);
@@ -13,22 +27,15 @@ class Exercise1 {
         System.out.println("Input the third number : ");
         int n3 = sc.nextInt();
 
-        float r;
+        float smaller = smallerNumber(n1,n2,n3);
 
-        if(n1<n2 && n1<n3){
-            r = n1;
-        }else if(n2<n3){
-            r = n2;
-        }else{
-            r = n3;
-        }
+        System.out.println("The smallest value is " + smaller);
 
-        System.out.println("The smallest value is " + r);
-
+        sc.close();
     }
 }
 
-
+// we can use method : return Math.min(n1, Math.min(n2, n3));
 
 
 /*
