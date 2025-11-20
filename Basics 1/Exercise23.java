@@ -25,3 +25,6 @@ public class Exercise23 {
         int loop_count = (int)bin / 4;
     }
 }
+
+// incomplete
+// The function bin_to_hexa is incomplete and does not perform the conversion.
